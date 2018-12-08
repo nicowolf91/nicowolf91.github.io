@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mx-auto" id="menu">
+      {% for tab in site.tabs %}
+        {% capture id %}{{ tab.id | remove:'/' | remove:'tabs' | downcase }}{% endcapture %}
+          <li class="nav-item" data-menuanchor="{{id}}">
+            <a class="nav-link" href="#{{id}}">{{tab.title}}</a>
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+
+<script type="text/javascript">
+var anchors = [
+{% for tab in site.tabs %}
+  {% capture id %}{{ tab.id | remove:'/' | remove:'tabs' | downcase }}{% endcapture %}
+  '{{id}}'{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]
+</script>
