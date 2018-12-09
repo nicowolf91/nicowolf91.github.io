@@ -1,0 +1,28 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% if site.github_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                        </li>
+                        {% endif %}
+                        {% if site.facebook_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        {% endif %}
+                        {% if site.xing_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://xing.com/profile/{{ site.xing_username }}"><i class="fa fa-xing"></i></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
