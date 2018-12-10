@@ -339,7 +339,7 @@ section h3.section-subheading {
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 400;
 }
 
@@ -354,19 +354,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#posts .posts-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#posts .posts-item .posts-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#posts .posts-item .posts-link .posts-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -378,11 +378,11 @@ section h3.section-subheading {
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#posts .posts-item .posts-link .posts-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#posts .posts-item .posts-link .posts-hover .posts-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -393,16 +393,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#posts .posts-item .posts-link .posts-hover .posts-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#posts .posts-item .posts-link .posts-hover .posts-hover-content h3,
+#posts .posts-item .posts-link .posts-hover .posts-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#posts .posts-item .posts-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -410,24 +410,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#posts .posts-item .posts-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#posts .posts-item .posts-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+#posts * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #posts .posts-item {
         margin: 0 0 30px;
     }
 }
@@ -773,7 +773,7 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.posts-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -784,32 +784,32 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.posts-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+.posts-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.posts-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.posts-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.posts-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.posts-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -819,11 +819,11 @@ ul.social-buttons li a:active {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.posts-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.posts-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -834,7 +834,7 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.posts-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -864,4 +864,21 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.post-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.post-subtitle {
+    margin-bottom: 30px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 18px;
 }
