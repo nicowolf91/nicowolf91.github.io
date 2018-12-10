@@ -1,7 +1,7 @@
 ---
 title: DictCursor
 subtitle: Using Psycopg2 Cursors like a Python Dict
-date: 2018-12-10
+date: 2018-12-09
 img: icons8-postgresql-480.png
 category: [programming, python, postgres, psycopg]
 ---
