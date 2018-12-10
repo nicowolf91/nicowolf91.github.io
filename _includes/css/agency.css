@@ -294,8 +294,9 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
+    word-break: break-word;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -363,7 +364,7 @@ section h3.section-subheading {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
 #posts .posts-item .posts-link .posts-hover {
@@ -405,7 +406,7 @@ section h3.section-subheading {
 #posts .posts-item .posts-caption {
     margin: 0 auto;
     padding: 25px;
-    max-width: 400px;
+    /* max-width: 400px; */
     text-align: center;
     background-color: #fff;
 }
@@ -428,7 +429,7 @@ section h3.section-subheading {
 
 @media(min-width:767px) {
     #posts .posts-item {
-        margin: 0 0 30px;
+        margin: 0 0 0px;
     }
 }
 
