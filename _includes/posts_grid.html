@@ -8,14 +8,14 @@
                 </div>
             </div>
             {% for post in site.posts %}
-                <div class="row">
-                    <div class="col-md-7 posts-item">
+                <div class="row posts-item">
+                    <div class="col-md-7">
                         <h1 class="post-title text-primary text-center">{{ post.title }}</h1>
                         <h6 class="post-subtitle text-muted text-center">{{ post.subtitle }}</h6>
                         <p>{{ post.content }}</p>
                     </div>
                     {% if post.img %}
-                    <div class="col-md-5 posts-item">
+                    <div class="col-md-5">
                         <img class="featurette-image img-fluid mx-auto" data-src="{{ post.img }}" alt="300x300" style="width: 300px; height: 300px;" src="img/posts/{{ post.img }}" data-holder-rendered="true">
                     </div>
                     {% endif %}
