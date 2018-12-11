@@ -1,5 +1,5 @@
 <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -8,54 +8,18 @@
                 </div>
             </div>
             <div class="row text-center">
+                {% for skill in site.data.skills %}
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-{{ skill.icon }} fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Conceptual Design</h4>
-                    <p class="text-muted">ER Modeling</p>
-                    <p class="text-muted">Database Design</p>
-                    <p class="text-muted">Software Architecture</p>
-                    <p class="text-muted">Distributed Systems</p>
+                    <h4 class="service-heading">{{ skill.name }}</h4>
+                    {% for example in skill.examples %}
+                    <p class="text-muted">{{ example.name }}</p>
+                    {% endfor %}
                 </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Databases</h4>
-                    <p class="text-muted">PostgreSQL</p>
-                    <p class="text-muted">Oracle</p>
-                    <p class="text-muted">SAP HANA</p>
-                    <p class="text-muted">MySQL</p>
-                    <p class="text-muted">Neo4j</p>
-                    <p class="text-muted">MongoDB</p>
-                </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Programming</h4>
-                    <p class="text-muted">PL/pgSQL | SQL</p>
-                    <p class="text-muted">Python</p>
-                    <p class="text-muted">Java | Scala</p>
-                    <p class="text-muted">ABAP</p>
-                    <p class="text-muted">JavaScript | TypeScript</p>
-                    <p class="text-muted">C | C++ | C#</p>
-                </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Development</h4>
-                    <p class="text-muted">REST | SOAP</p>
-                    <p class="text-muted">Flask | Flask RESTful</p>
-                    <p class="text-muted">Dropwizard</p>
-                    <p class="text-muted">Crossbar</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

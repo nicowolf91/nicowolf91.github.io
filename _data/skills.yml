@@ -1,0 +1,35 @@
+- name: Conceptual Design
+  icon: pencil
+  examples:
+    - name: ER Modeling
+    - name: Database Design
+    - name: Software Architecture
+    - name: Distributed Systems
+
+- name: Databases
+  icon: database
+  examples:
+    - name: PostgreSQL
+    - name: Oracle
+    - name: SAP HANA
+    - name: MySQL
+    - name: Neo4j
+    - name: MongoDB
+
+- name: Programming
+  icon: laptop
+  examples:
+    - name: PL/pgSQL | SQL
+    - name: Python
+    - name: Java | Scala
+    - name: ABAP
+    - name: JavaScript | TypeScript
+    - name: C | C++ | C#
+
+- name: Web Development
+  icon: cloud
+  examples:
+    - name: REST | SOAP
+    - name: Flask | Flask RESTful
+    - name: Dropwizard
+    - name: Crossbar
