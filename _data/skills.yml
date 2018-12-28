@@ -6,7 +6,7 @@
     - name: Software Architecture
     - name: Distributed Systems
     - name: Data Processing Pipelines
-    - name: Microvervices
+    - name: Microservices
 
 - name: Databases
   icon: database
@@ -35,5 +35,5 @@
     - name: Flask | Flask RESTful
     - name: Dropwizard
     - name: Crossbar
-    - name: Jekyll
     - name: Angular 2+
+    - name: Jekyll
