@@ -503,6 +503,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
+    background-color: #f7f7f7
 }
 
 .timeline>li .timeline-image h4 {
