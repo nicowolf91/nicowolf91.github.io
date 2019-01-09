@@ -301,6 +301,10 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .btn {
+    margin-top: 50px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -499,7 +503,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    /* background-color: #{{ site.data.template.color.primary }}; */
 }
 
 .timeline>li .timeline-image h4 {
