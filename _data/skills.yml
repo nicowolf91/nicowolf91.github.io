@@ -7,6 +7,7 @@
     - name: Distributed Systems
     - name: Data Processing Pipelines
     - name: Microservices
+    - name: ...
 
 - name: Databases
   icon: database
@@ -17,6 +18,7 @@
     - name: MySQL
     - name: Neo4j
     - name: MongoDB
+    - name: ...
 
 - name: Programming
   icon: laptop
@@ -27,6 +29,7 @@
     - name: ABAP
     - name: JavaScript | TypeScript
     - name: C | C++ | C#
+    - name: ...
 
 - name: Web Development
   icon: cloud
@@ -37,3 +40,4 @@
     - name: Crossbar
     - name: Angular 2+
     - name: Jekyll
+    - name: ...
