@@ -24,6 +24,7 @@
   icon: laptop
   examples:
     - name: PL/pgSQL | SQL
+    - name: Go
     - name: Python
     - name: Java | Scala
     - name: ABAP
@@ -35,6 +36,7 @@
   icon: cloud
   examples:
     - name: REST | SOAP
+    - name: MQTT | AMQP
     - name: Flask | Flask RESTful
     - name: Dropwizard
     - name: Crossbar
