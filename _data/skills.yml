@@ -21,7 +21,7 @@
 - name: Programming
   icon: laptop
   examples:
-    - name: SQL
+    - name: PL/pgSQL | SQL
     - name: Go
     - name: Python
     - name: Java
