@@ -7,37 +7,36 @@
     - name: Distributed Systems
     - name: Data Processing Pipelines
     - name: Microservices
-    - name: ...
 
 - name: Databases
   icon: database
   examples:
-    - name: PostgreSQL
+    - name: Postgres | PL/pgSQL
     - name: Oracle
     - name: SAP HANA
     - name: MySQL
     - name: Neo4j
     - name: MongoDB
-    - name: ...
 
 - name: Programming
   icon: laptop
   examples:
-    - name: PL/pgSQL | SQL
+    - name: SQL
+    - name: Go
     - name: Python
-    - name: Java | Scala
+    - name: Java
     - name: ABAP
     - name: JavaScript | TypeScript
-    - name: C | C++ | C#
-    - name: ...
+    - name: C | C++
 
 - name: Web Development
   icon: cloud
   examples:
-    - name: REST | SOAP
+    - name: AWS
+    - name: REST
+    - name: MQTT
+    - name: WebSocket | SSE
+    - name: Angular 2+
     - name: Flask | Flask RESTful
     - name: Dropwizard
-    - name: Crossbar
-    - name: Angular 2+
-    - name: Jekyll
-    - name: ...
+    - name: Crossbar.io
