@@ -1,0 +1,27 @@
+<!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="list-inline social-buttons">
+                        {% if site.github_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                        </li>
+                        {% endif %}
+                        {% if site.linkedin_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        {% endif %}
+                        {% if site.xing_username %}
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://xing.com/profile/{{ site.xing_username }}"><i class="fa fa-xing"></i></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
